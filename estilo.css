@@ -1,0 +1,111 @@
+/* importamos la fuente de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #323232;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor{
+    width: 90%;
+    height: 85%;
+    background-color: #000;
+    border-radius: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.formulario{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenedor-video{
+    width: 60%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.video{
+    max-width: 800px;
+    border-radius: 40px;
+    margin: auto;
+    display: block;
+}
+.contenedor h3{
+    color: #353535;
+    margin-bottom: 10px;
+}
+.contenedor h2{
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 10px;
+}
+.contenedor p{
+    color: #878787;
+}
+.contenedor p a{
+    color:#ff5b31;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+.contenedor form{
+    margin-top: 50px;
+}
+.contenedor form .entrada{
+    background-color: #353535;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+}
+.contenedor form .entrada label{
+    display: block;
+    color: #878787;
+    font-size: 14px;
+    line-height: 14px;
+}
+.contenedor form .entrada input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+}
+.contenedor .btn{
+    background-color: #ff5b31;
+    border: none;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* seccion responsive */
+@media screen and (max-width:900px) {
+    body{
+        height: auto;
+    }
+    .contenedor{
+        display: block;
+        height: auto;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .contenedor-video{
+        width: 100%;
+    }
+    .video{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
